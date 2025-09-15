@@ -17,8 +17,7 @@ It highlights my work, provides quick access to my resume, and includes a contac
 
 ## 🔧 Tech Stack  
 - **HTML5**  
-- **CSS3**  
-- **JavaScript (Basic)**  
+- **CSS3**   
 - **Responsive Design**  
 
 ---
@@ -38,7 +37,7 @@ Check out the live version of my portfolio here:
 
 ## 📬 Contact  
 - **Email:** shahbaz1861935@gmail.com  
-- **Phone:** +91 7095469936  
+- **Phone:** +91 7093469936  
 - **Location:** Hyderabad, India  
 - **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/your-link)  
 - **GitHub:** [Shahbaz181](https://github.com/Shahbaz181)  
