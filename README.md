@@ -8,7 +8,7 @@ It highlights my work, provides quick access to my resume, and includes a contac
 ## ✨ Features  
 - **About Me** – introduction & core values  
 - **Education** – academic background  
-- **Skills** – HTML, CSS, JavaScript (currently learning React.js)  
+- **Skills** – HTML, CSS (currently learning JavaScript )  
 - **Projects** – Amazon Clone, YouTube Clone, TechCorp Solutions & more  
 - **Resume** – downloadable PDF resume  
 - **Contact Section** – connect with me for collaboration, freelancing, and opportunities  
