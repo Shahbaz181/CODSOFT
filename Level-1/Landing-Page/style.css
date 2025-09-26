@@ -1,0 +1,720 @@
+/* General Body & Typography */
+:root {
+    --bg-color-dark: #0f0f0f;
+    --bg-color-medium: #1a1a1a;
+    --text-color-light: #f5f5f5;
+    --text-color-muted: #9e9e9e;
+    --accent-color: #e50914; /* A deep red, often associated with sports cars */
+    --accent-color-light: #ff3a49;
+    --font-primary: 'Oswald', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-secondary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-light);
+    line-height: 1.8;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-primary);
+    text-align: center;
+    color: var(--text-color-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 { font-size: clamp(2.5em, 6vw, 5em); }
+h2 { font-size: clamp(2em, 4vw, 3.5em); }
+h3 { font-size: clamp(1.5em, 3vw, 2.2em); }
+h4 { font-size: 1.2em; }
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-subtitle {
+    font-size: 1.1em;
+    color: var(--text-color-muted);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Header & Navigation */
+.main-header {
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: var(--font-primary);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2.5px solid var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--text-color-light);
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color-light);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative; /* Set to relative to contain the video */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+/* Styles for the video background */
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire container without distortion */
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Puts the video in the background */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 20, 20, 0.7); /* Dark overlay to improve text readability */
+    backdrop-filter: blur(2px);
+    z-index: 1; /* Puts the overlay in front of the video */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Puts the content on top of the video and overlay */
+    max-width: 900px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: clamp(3em, 8vw, 6em);
+    margin-bottom: 0.2em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--text-color-light);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: none;
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: var(--accent-color-light);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 8px 30px rgba(229, 9, 20, 0.6);
+}
+
+/* Main Sections */
+main {
+    padding-top: 80px; /* Space for the fixed header */
+}
+
+section {
+    padding: 30px 0;
+}
+
+/* Styling for the Introduction Section with Image */
+.explore-section {
+    background-color: var(--bg-color-medium);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.explore-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.explore-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.explore-text h2 {
+    text-align: left;
+}
+
+.explore-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.explore-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+/* Featured Cards */
+.car-showcase-section {
+    background-color: var(--bg-color-dark);
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.car-card {
+    background-color: var(--bg-color-medium);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    border-left: 4px solid var(--accent-color);
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.car-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.car-card:hover img {
+    transform: scale(1.05);
+}
+
+.car-card .card-content {
+    padding: 25px;
+}
+
+.car-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.car-card p {
+    font-size: 0.9em;
+    color: var(--text-color-muted);
+    margin-bottom: 25px;
+}
+
+.car-card .learn-more {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: background 0.3s, color 0.3s;
+}
+
+.car-card .learn-more:hover {
+    background: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+/* Era Page Specifics */
+.eras-section {
+    background: linear-gradient(180deg, var(--bg-color-dark) 0%, var(--bg-color-medium) 100%);
+}
+
+.era-block {
+    background: var(--bg-color-medium);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.era-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.era-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.era-image {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.era-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.era-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.era-text {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.era-text h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+/* Alternate the image and text alignment */
+.era-block--reverse .era-content-container {
+    flex-direction: row-reverse;
+}
+
+.era-block h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--accent-color-light);
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.era-block p {
+    text-align: left;
+    color: var(--text-color-muted);
+}
+
+.featured-car-list {
+    margin-top: 30px;
+}
+
+.featured-car-list h4 {
+    text-align: left;
+    color: var(--text-color-light);
+    margin-bottom: 15px;
+}
+
+.featured-car-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-car-list li {
+    background: #252525;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-color);
+    transition: background 0.3s;
+}
+
+.featured-car-list li:hover {
+    background: #333;
+}
+
+.featured-car-list strong {
+    color: var(--text-color-light);
+}
+
+/* Brands Page Specifics */
+.brands-section,
+.iconic-brands-section {
+    background-color: var(--bg-color-dark);
+    padding: 20px 0;
+}
+
+.scrolling-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-logos-track {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 40s linear infinite;
+}
+
+.scrolling-carousel-wrapper:hover .brand-logos-track {
+    animation-play-state: paused;
+}
+
+.brand-logo-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 30px;
+}
+
+.brand-logo-item img {
+    max-width: 120px;
+    max-height: 100%;
+    width: auto;
+    filter: brightness(0.8) grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.brand-logo-item:hover img {
+    filter: brightness(1) grayscale(0%);
+    opacity: 1;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.brand-info {
+    background-color: var(--bg-color-medium);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    transition: transform 0.3s;
+    border-left: 4px solid var(--accent-color);
+}
+
+.brand-info:hover {
+    transform: translateY(-5px);
+}
+
+.brand-info h3 {
+    text-align: left;
+    font-size: 2em;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    /* Use flexbox for perfect vertical alignment of text and logo */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-info p {
+    text-align: left;
+    font-size: 1.1em;
+    color: var(--text-color-muted);
+}
+
+.brand-info strong {
+    color: var(--text-color-light);
+}
+
+/* Updated CSS for inline logos */
+.brand-logo-inline {
+    width: 40px; /* Increased size */
+    height: 40px; /* Increased size */
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.brand-logo-inline img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: none;
+    opacity: 1;
+}
+
+/* Gallery Page Specifics - Updated for a Stable Layout */
+.gallery-section {
+    background-color: var(--bg-color-dark);
+    padding: 60px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    /* This creates a fluid grid that automatically fits items */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* This is the key: auto-rows handles varying heights gracefully */
+    grid-auto-rows: 250px;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+/* Base styles for all gallery items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image fills the container without distortion */
+    display: block;
+    transition: filter 0.3s;
+}
+
+.gallery-item:hover img {
+    filter: brightness(0.7);
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9em;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-item:hover figcaption {
+    transform: translateY(0);
+}
+
+/* Specific sizing for vertical (portrait) images */
+/* By targeting specific images, you ensure only the intended ones take up more vertical space */
+.gallery-item:nth-of-type(2), 
+.gallery-item:nth-of-type(6),
+.gallery-item:nth-of-type(10),
+.gallery-item:nth-of-type(15),
+.gallery-item:nth-of-type(20) {
+    grid-row: span 2;
+}
+
+/* Your existing responsive design and other sections */
+/* ... (rest of your CSS code remains the same) ... */
+
+
+/* About Page Specifics - Our Story Section */
+
+.about-section {
+    background-color: var(--bg-color-dark);
+    padding: 60px 0;
+}
+
+.about-content {
+    background: var(--bg-color-medium);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    border-left: 4px solid var(--accent-color);
+}
+
+.about-content h2 {
+    text-align: center;
+    color: var(--accent-color-light);
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    text-align: justify;
+    color: var(--text-color-muted);
+}
+/* Footer */
+.footer {
+    background: var(--bg-color-medium);
+    color: var(--text-color-muted);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar { flex-direction: column; gap: 10px; }
+    .nav-links { margin-top: 10px; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .nav-links li { margin-left: 0; }
+    .hero-content h1 { font-size: 2.8em; }
+    .hero-content p { font-size: 1em; }
+    .cta-button { padding: 12px 30px; }
+
+    /* Era Page responsiveness */
+    .era-content-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .era-block--reverse .era-content-container {
+        flex-direction: column;
+    }
+    .era-text h3 {
+        text-align: center;
+    }
+    .era-block .featured-car-list h4,
+    .era-block .featured-car-list ul {
+        text-align: left;
+    }
+
+    /* Explore Section Responsiveness */
+    .explore-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .explore-text h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.8em; }
+    .hero-content { margin-top: 0; }
+    .section-subtitle { font-size: 0.9em; margin-bottom: 30px; }
+}
+
+@media (max-width: 768px) {
+    /* Brand carousel responsiveness */
+    .brand-logo-item {
+        padding: 0 20px;
+        height: 70px;
+    }
+    .brand-logo-item img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Brand carousel responsiveness */
+    .brand-logo-item {
+        padding: 0 15px;
+        height: 60px;
+    }
+    .brand-logo-item img {
+        max-width: 80px;
+    }
+    .brand-logos-track {
+        animation-duration: 30s;
+    }
+}
