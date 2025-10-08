@@ -14,9 +14,11 @@ This repository contains the tasks completed during my **CodSoft Web Development
   A visually appealing landing page based on the theme of *Automotive History & Iconic Brands*.  
   🔗 [Live Preview](https://landingpage-eight-snowy.vercel.app/)  
   💻 [Source Code](https://github.com/Shahbaz181/CODSOFT/tree/main/Level-1/Landing-Page)  
-
-- **Task 3: (Coming Soon...)**  
-  To be updated once completed.
+  
+ - **Task 3: Calculator**  
+  A fully functional calculator built with **HTML, CSS & JavaScript**, handling multiple operations, decimals, negative numbers, error prevention, keyboard support, and more.  
+  🔗 [Live Preview](https://regal-fenglisu-c6b4ba.netlify.app/))  
+  💻 [Source Code](https://github.com/Shahbaz181/CODSOFT/tree/main/Level-1/Calculator)
 
 ---
 
@@ -25,6 +27,8 @@ This repository contains the tasks completed during my **CodSoft Web Development
 - Responsive design with CSS (Flexbox/Grid) 📐  
 - Typography and color usage in design 🎨  
 - Visual storytelling through layout ✨  
+- JavaScript logic for dynamic, interactive features ⚡  
+- Input validation, error handling & keyboard events ⌨️
 
 ---
 
