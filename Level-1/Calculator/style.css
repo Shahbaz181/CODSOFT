@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #14213d);
+}
+
+/* Calculator Container */
+.calculator {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    border-radius: 20px;
+    background: #14213d;
+    box-shadow: 0px 5px 20px rgba(252, 163, 17, 0.3);
+    transition: 0.3s ease;
+}
+
+.calculator:hover {
+    box-shadow: 0px 8px 30px rgba(252, 163, 17, 0.5);
+}
+
+/* Input Display */
+input {
+    width: 320px;
+    border: none;
+    padding: 20px;
+    margin: 10px 0 25px 0;
+    background: #000000;
+    color: #ffffff;
+    font-size: 38px;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: inset 2px 2px 10px rgba(20, 33, 61, 0.8),
+                inset -2px -2px 10px rgba(252, 163, 17, 0.3);
+}
+
+input::placeholder {
+    color: #e5e5e5;
+}
+
+/* Button Layout */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+/* Buttons */
+button {
+    border: none;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(20, 33, 61, 0.8),
+                -3px -3px 8px rgba(252, 163, 17, 0.3);
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #fca311;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.equalBtn {
+    background-color: #fca311;
+    color: #000000;
+    box-shadow: 0px 4px 15px rgba(252, 163, 17, 0.7);
+}
+
+.operator {
+    color: #6dee0a;
+}
+
+/* ===== Responsive Layouts ===== */
+
+/*  Android & iPhone */
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+        border-radius: 16px;
+        box-shadow: 0px 3px 12px rgba(252, 163, 17, 0.25);
+    }
+
+    input {
+        width: 290px;
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .button-container {
+        gap: 12px;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 18px;
+    }
+}
+
+/* iPad & Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .calculator {
+        padding: 25px;
+        border-radius: 18px;
+    }
+
+    input {
+        width: 320px;
+        font-size: 34px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+/* MacBook & Laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .calculator {
+        padding: 30px;
+        box-shadow: 0px 6px 25px rgba(252, 163, 17, 0.4);
+    }
+
+    input {
+        width: 350px;
+        font-size: 40px;
+    }
+
+    button {
+        width: 68px;
+        height: 68px;
+        font-size: 22px;
+    }
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1441px) {
+    .calculator {
+        padding: 35px;
+        border-radius: 24px;
+        box-shadow: 0px 8px 40px rgba(252, 163, 17, 0.4);
+    }
+
+    input {
+        width: 400px;
+        font-size: 42px;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+        font-size: 24px;
+    }
+}
