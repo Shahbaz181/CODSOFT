@@ -1,53 +1,43 @@
-# 🌐 Personal Portfolio Website  
+# CodSoft Web Development Internship 🚀
 
-This is my **personal portfolio website**, built to showcase my **skills, projects, education, and journey as a Front-End Developer**.  
-It highlights my work, provides quick access to my resume, and includes a contact section for collaboration opportunities. 🚀  
-
----
-
-## ✨ Features  
-- **About Me** – introduction & core values  
-- **Education** – academic background  
-- **Skills** – HTML, CSS (currently learning JavaScript )  
-- **Projects** – Amazon Clone, YouTube Clone, TechCorp Solutions & more  
-- **Resume** – downloadable PDF resume  
-- **Contact Section** – connect with me for collaboration, freelancing, and opportunities  
+This repository contains the tasks completed during my **CodSoft Web Development Internship**.
 
 ---
 
-## 🔧 Tech Stack  
-- **HTML5**  
-- **CSS3**   
-- **Responsive Design**  
+## 📂 Repository Structure
+
+- **Task 1: Portfolio Website**  
+  A responsive personal portfolio website showcasing my profile, skills, projects, and contact details.  
+  🔗 [Live Demo](https://your-portfolio-link-here)   
+
+- **Task 2: Automotive Legends Landing Page**  
+  A visually appealing landing page based on the theme of *Automotive History & Iconic Brands*.  
+  🔗 [Live Preview](https://landingpage-eight-snowy.vercel.app/)  
+  💻 [Source Code](https://github.com/Shahbaz181/CODSOFT/tree/main/Level-1/Landing-Page)  
+
+- **Task 3: (Coming Soon...)**  
+  To be updated once completed.
 
 ---
 
-## 🚀 Live Demo  
-Check out the live version of my portfolio here:  
-👉 [Portfolio Live Demo](https://lucky-lily-435b2a.netlify.app/)  
+## 🛠️ Key Learnings
+- Semantic HTML structure 🏗️  
+- Responsive design with CSS (Flexbox/Grid) 📐  
+- Typography and color usage in design 🎨  
+- Visual storytelling through layout ✨  
 
 ---
 
-## 📂 Projects Included  
-- **Amazon Clone** – Responsive online store layout  
-- **YouTube Clone** – Video streaming platform design  
-- **TechCorp Solutions** – Business website  
+## 📌 About
+This repository reflects my learning journey during the CodSoft internship program and documents the projects I built as part of the tasks.
 
 ---
 
-## 📬 Contact  
-- **Email:** shahbaz1861935@gmail.com  
-- **Phone:** +91 7093469936  
-- **Location:** Hyderabad, India  
-- **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/your-link)  
+## 📫 Contact
+- **Name:** Syed Shahbaz  
 - **GitHub:** [Shahbaz181](https://github.com/Shahbaz181)  
+- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/your-profile) 
 
 ---
 
-## 🙌 Acknowledgments  
-Special thanks to **CodSoft** for inspiring and supporting my learning journey!  
-
----
-
-## 🔮 Future Work  
-More projects will be uploaded in this repository soon. Stay tuned! 🚀  
+### ⭐ If you found this repository helpful or inspiring, don’t forget to star it!
